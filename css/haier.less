@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+}
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        height: 0;
+        content: '';
+        clear: both;
+    }
+}
+.top_container,.sub_top_container,.sub_list_container,.join_us_container,.new_things_container,.more_container,.footer_container{
+    width: 1050px;
+    margin: 0 auto;
+}
+.top{
+    .top_container{
+        position: relative;
+        height: 75px;
+        .logo{
+            float: left;
+            padding: 20px;
+        }
+        .top_list{
+            float: left;
+            line-height: 75px;
+            span{
+                display: inline-block;
+                line-height: 40px;
+                padding: 0 25px;
+                border-right: 1px solid #e4dcdc;
+                &.last{
+                    border-right: none;
+                }
+            }
+        }
+        .top_right{
+            float: left;
+            img{
+                margin-top: 26px;
+                height: 30px;
+            }
+        }
+        .search{
+            float: right;
+            height: 75px;
+            line-height: 75px;
+            input{
+                height: 30px;
+                line-height: 30px;
+                border-radius: 5px;
+                border: 1px solid #bbb2b5;
+                box-sizing: border-box;
+            }
+            button{
+                border-radius: 5px;
+                border: none;
+                width: 30px;
+                vertical-align: middle;
+                margin-left: 3px;
+                height: 30px;
+                background: url('../images/haier/search.png') no-repeat center;
+
+            }
+        }
+        .login{
+            position: absolute;
+            top: 0;
+            right: 0;
+            p{
+                a{
+                }
+            }
+        }
+    }
+}
+.sub_top{
+    background: #707070;
+    .sub_top_container{
+        ul{
+            float: left;
+            li{
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                font-size: 14px;
+                color: #ffffff;
+                padding: 0 18px;
+                border-left: 1px solid #ffffff;
+            }
+        }
+    }
+}
+.banner{
+    background: url('../images/haier/banner.png') no-repeat;
+    background-size: cover;
+    height: 480px;
+}
